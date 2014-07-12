@@ -1,0 +1,41 @@
+<head>
+	<style type="text/css" media="all">
+	   @import "css/index.css";
+	   @import "css/et.css";
+	   @import "css/jquery-ui-1.10.4.custom.min.css";
+	</style>
+	<script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+	<script type="text/javascript" src="js/et.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.10.4.custom.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOZYhoMiRLvCw7vDLPGmlfmRBlbqE0IXs&sensor=false"></script>
+	<!-- Embeddable -->
+</head>
+<body>
+	<div id="header">
+		<center>
+		<table width="100%"> <!-- Top Banner Across the Screen -->
+			<tr>
+			<td><!-- This is the settings gear button -->
+				<img src="img/menu_gps.png" border="0" height="50px">
+			</td>
+			<td width="100%"> <!-- Top logo header --> 
+				<center><img src="img/full_logo.png" alt="Logo" height="70px"></center>
+			</td>
+			<td><!-- This is the upper right hand message button -->x
+				<img src="img/menu_message.png" border="0" height="50px">
+			</td>
+			</tr>
+		</table>
+		</center>	
+	</div>
+	<div class="middle draggable"> <!-- Draggable is implemened through jQueryUI-->
+		<div>		
+			<center><img id="profile_img">
+				<iframe width='100%' height='300' frameborder='0' src='http://elandybarr.cartodb.com/viz/f8b488ba-0a0b-11e4-8c54-0e230854a1cb/embed_map?title=true&description=true&search=false&shareable=true&cartodb_logo=true&layer_selector=false&legends=false&scrollwheel=true&fullscreen=true&sublayer_options=1&sql=' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+			</center>  <!-- Replaced by pic -->
+		</div>
+		<br>	
+		<br>			
+		<div id="debug"></div> <!-- This is where the lat-long comes out -->
+	</div>
+</body>
